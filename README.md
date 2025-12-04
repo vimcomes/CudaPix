@@ -12,6 +12,25 @@ Small C++20 + CUDA demo that loads images, runs a handful of GPU-accelerated fil
 - CLI tool: apply filters from the terminal.
 - GUI: view original/processed images, tweak parameters, and save results.
 
+## Architecture
+
+```mermaid
+flowchart TB
+    A[CUDA Image Filters Project] --> B[CLI Tool]
+    A --> C[Core Library]
+    A --> D[GUI (SDL2 + ImGui)]
+
+    C --> E[stb_image / stb_image_write]
+    C --> F[CUDA Filters: grayscale, blur, brightness, sobel]
+
+    B --> C
+
+    D --> C
+    D --> G[OpenGL Textures]
+    D --> H[ImGui Controls Panel]
+```    
+
+
 ## Dependencies (Ubuntu 24.04)
 - CUDA Toolkit (nvcc + runtime).
 - CMake ≥ 3.20, a C++20 compiler.
