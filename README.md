@@ -51,6 +51,10 @@ cmake --build .
 - Click **Apply filter** to run it on the GPU.
 - Use **Save result** to write the processed image.
 
+Example GUI screenshot:
+
+![GUI screenshot with filter applied](docs/screenshot.png)
+
 ## Notes
 - Images are normalized to 8-bit interleaved RGB; alpha is discarded on load.
 - Kernels are straightforward, prioritizing readability over heavy optimization.
