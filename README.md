@@ -30,6 +30,12 @@ flowchart TB
     D --> H[ImGui Controls Panel]
 ```    
 
+The project is split into three main components:
+
+- **Core Library** — image type, CUDA and CPU filters, stb helpers.
+- **CLI Tool** — batch image processing, calling the core directly.
+- **GUI Tool** — SDL2 + OpenGL + Dear ImGui interface with real-time previews and CPU/GPU timing.
+
 
 ## Dependencies (Ubuntu 24.04)
 - CUDA Toolkit (nvcc + runtime).
