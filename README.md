@@ -1,3 +1,8 @@
+![C++20](https://img.shields.io/badge/C++-20-blue)
+![CUDA](https://img.shields.io/badge/CUDA-GPU-green)
+![SDL2](https://img.shields.io/badge/SDL2-GUI-orange)
+![ImGui](https://img.shields.io/badge/ImGui-Interface-yellow)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu%2024.04-blueviolet)
 # CUDA Image Filters (CLI + GUI)
 
 Small C++20 + CUDA demo that loads images, runs a handful of GPU-accelerated filters, and exposes both a console tool and an SDL2 + Dear ImGui viewer.
