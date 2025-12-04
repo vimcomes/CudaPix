@@ -18,7 +18,7 @@ Small C++20 + CUDA demo that loads images, runs a handful of GPU-accelerated fil
 flowchart TB
     A[CUDA Image Filters Project] --> B[CLI Tool]
     A --> C[Core Library]
-    A --> D[GUI (SDL2 + ImGui)]
+    A --> D[GUI: SDL2 and ImGui]
 
     C --> E[stb_image / stb_image_write]
     C --> F[CUDA Filters: grayscale, blur, brightness, sobel]
