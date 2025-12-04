@@ -1,0 +1,15 @@
+build/
+cmake-build-*/
+imgui.ini
+.idea/
+*.a
+*.o
+*.obj
+*.pch
+*.pdb
+*.ilk
+*.dll
+*.exe
+*.lib
+*.log
+*.dSYM/
